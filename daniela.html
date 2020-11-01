@@ -31,6 +31,137 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css?v4">
+        
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+  background: #F2F2F2;
+  padding: 0;
+  maring: 0;
+}
+
+#price {
+  text-align: center;
+}
+
+.plan {
+  display: inline-block;
+  margin: 10px 1%;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.plan-inner {
+  background: #fff;
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 100%;
+  position:relative;
+}
+
+.entry-title {
+  background: #53CFE9;
+  height: 115px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.entry-title>h3 {
+  background: #20BADA;
+  font-size: 20px;
+  padding: 3px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.entry-title .price {
+  position: absolute;
+  bottom: -10px;
+  background: #20BADA;
+  height: 95px;
+  width: 95px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 5px solid #fff;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.price span {
+  position: absolute;
+  font-size: 9px;
+  bottom: -10px;
+  left: 30px;
+  font-weight: 400;
+}
+
+.entry-content {
+  color: #323232;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.entry-content li {
+  padding: 5px 0;
+}
+
+.entry-content li:last-child {
+  border: none;
+}
+
+.btn {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.btn a {
+  background: #323232;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none
+}
+.hot {
+    position: absolute;
+    top: -7px;
+    background: #F80;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    padding: 2px 5px;
+    font-size: 9px;
+    border-radius: 2px;
+    right: 10px;
+    font-weight: 500;
+}
+.basic .entry-title {
+  background: #000074;
+}
+
+.basic .entry-title > h3 {
+  background: #000074;
+}
+
+.basic .price {
+  background: #FF5900;
+}
+
+
+</style>
+        
 </head>
 <body>
 
@@ -58,13 +189,13 @@
 						<a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">Caracter&iacute;sticas</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#fh5co-reviews').goTo();return false;">Experiencia</a>
+						<a class="nav-link" href="#" onclick="$('#').goTo();return false;">Experiencia</a>
 					</li>
                                         <li class="nav-item">
 						<a class="nav-link" href="#" onclick="$('#fh5co-planes').goTo();return false;">Planes</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">Iniciar Sesi&oacute;n</a>
+                                            <a class="nav-link" href="https://multinegocios.la/login/" onclick="$('#fh5co-download').goTo();return false;" target="_blanck">Iniciar Sesi&oacute;n</a>
 					</li>
 				</ul>
 				<div class="social-icons-header">
@@ -214,62 +345,27 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 	<!-- ==========================================================================================================
 		DANIELA
 		 ========================================================================================================== -->
-
-	<div id="fh5co-reviews" class="fh5co-reviews-outer">
+	<div class="fh5co-slider-outer" data-wow-delay="0.36s">
 		<h1>What people are saying</h1>
-		<small>Reviews</small>
-		<div class="container fh5co-reviews-inner">
-			<div class="row justify-content-center">
-				<div class="col-sm-5 wow fadeIn animated" data-wow-delay="0.25s">
-					<img class="float-left" src="img/quotes-1.jpg" alt="Quote 1">
-					<p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
-					<small class="testimonial-author">John Doe</small>
-					<img class="float-right" src="img/quotes-2.jpg" alt="Quote 2">
-				</div>
-				<div class="col-sm-5 testimonial-2 wow fadeIn animated" data-wow-delay="0.67s">
-					<img class="float-left" src="img/quotes-1.jpg" alt="Quote 1">
-					<p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
-					<small class="testimonial-author">Someone</small>
-					<img class="float-right" src="img/quotes-2.jpg" alt="Quote 2">
-				</div>
+		<small>Drag and Drop</small>
+		<div class="container fh5co-slider-inner">
+
+			<div class="owl-carousel owl-theme">
+
+				<div class="item"><img src="img/smartphone-2.png" alt=""></div>
+				<div class="item"><img src="img/smartphone-2.png" alt=""></div>
+				<div class="item"><img src="img/iphone.png" alt=""></div>
+				<div class="item"><img src="img/smartphone-2.png" alt=""></div>
+
+
 			</div>
 
 		</div>
 	</div>
-	
+
         
         <!-- ==========================================================================================================
 													  REVIEWS
@@ -277,24 +373,101 @@
 
 	<div id="fh5co-planes" class="fh5co-reviews-outer">
 		<h1>Planes</h1>
-		<small>Reviews</small>
-		<div class="container fh5co-reviews-inner">
-			<div class="row justify-content-center">
-				<div class="col-sm-5 wow fadeIn animated" data-wow-delay="0.25s">
-					<img class="float-left" src="img/quotes-1.jpg" alt="Quote 1">
-					<p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
-					<small class="testimonial-author">John Doe</small>
-					<img class="float-right" src="img/quotes-2.jpg" alt="Quote 2">
-				</div>
-				<div class="col-sm-5 testimonial-2 wow fadeIn animated" data-wow-delay="0.67s">
-					<img class="float-left" src="img/quotes-1.jpg" alt="Quote 1">
-					<p class="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
-					<small class="testimonial-author">Someone</small>
-					<img class="float-right" src="img/quotes-2.jpg" alt="Quote 2">
-				</div>
-			</div>
-
-		</div>
+		
+            <div id="price">
+  <!--price tab-->
+  
+  <!-- end of price tab-->
+  <!--price tab-->
+  <div class="plan basic">
+    <div class="plan-inner">
+      <div class="hot">Incluye IGV</div>
+      <div class="entry-title">
+        <h3>PLAN MYPE</h3>
+        <div class="price">$97<span>Al Mes</span>
+        </div>
+      </div>
+      <div class="entry-content">
+        <ul>
+          <li><strong>2 Usuarios</strong></li>
+          <li><s>Facturas y Boletas Electrónicas*</s></li>
+          <li><s>Guías de Reminisión Electrónicas</s></li>
+          <li><strong>Lista de Precios</strong></li>
+          <li><strong>1 Sucursal</strong></li>
+          <li><strong>Envío de Cotizaciones</strong></li>
+          <li><strong>Reportes de Fácil Lectura</strong></li>
+          <li><s>Control de Inventario</s></li>
+          <li><s>Punto de Venta (POS)</s></li>
+          <li><s>Módulo de producción</s></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a href="https://multinegocios.la/login/" target="_blank">Acepto</a>
+      </div>
+    </div>
+  </div>
+  <!-- end of price tab-->
+  <!--price tab-->
+  <div class="plan basic">
+    <div class="plan-inner">
+      <div class="hot">Incluye IGV</div>
+      <div class="entry-title">
+        <h3>PLAN VUELA</h3>
+        <div class="price">$167<span>Al Mes</span>
+        </div>
+      </div>
+      <div class="entry-content">
+        <ul>
+          <li><strong>5 Usuarios</strong></li>
+          <li><strong>Facturas y Boletas Electrónicas*</strong></li>
+          <li><strong>Guías de Reminisión Electrónicas</strong></li>
+          <li><strong>Lista de Precios</strong></li>
+          <li><strong>1 Sucursal</strong></li>
+          <li><strong>Envío de Cotizaciones</strong></li>
+          <li><strong>Reportes de Fácil Lectura</strong></li>
+          <li><strong>Control de Inventario</strong></li>
+          <li><strong>Punto de Venta (POS)</strong></li>
+          <li><s>Módulo de producción</s></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a href="https://multinegocios.la/login/" target="_blank">Acepto</a>
+      </div>
+    </div>
+  </div>
+  <!-- end of price tab-->
+  <!--price tab-->
+  <div class="plan basic">
+    <div class="plan-inner">
+      <div class="hot">Incluye IGV</div>
+      <div class="entry-title">
+        <h3>PLAN VUELA PRO</h3>
+        <div class="price">$247<span>Al Mes</span>
+        </div>
+      </div>
+      <div class="entry-content">
+        <ul>
+          <li><strong>10 Usuarios</strong></li>
+          <li><strong>Facturas y Boletas Electrónicas*</strong></li>
+          <li><strong>Guías de Reminisión Electrónicas</strong></li>
+          <li><strong>Lista de Precios</strong></li>
+          <li><strong>2 Sucursales</strong></li>
+          <li><strong>Envío de Cotizaciones</strong></li>
+          <li><strong>Reportes de Fácil Lectura</strong></li>
+          <li><strong>Control de Inventario</strong></li>
+          <li><strong>Punto de Venta (POS)</strong></li>
+          <li><strong>Módulo de producción</strong></li>
+        </ul>
+      </div>
+      <div class="btn">
+          <a href="https://multinegocios.la/login/" target="_blank">Acepto</a>
+      </div>
+    </div>
+  </div>
+  <!-- end of price tab-->
+</div>
+   
+            
 	</div>
 	
 
@@ -304,21 +477,19 @@
                                                  BOTTOM
     ========================================================================================================== -->
 
-	<div id="fh5co-download" class="fh5co-bottom-outer">
-		<div class="overlay">
-			<div class="container fh5co-bottom-inner">
-				<div class="row">
-					<div class="col-sm-6">
-						<h1>How to download the app?</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit, similique animi saepe, ipsam itaque, tempore minus maxime pariatur error unde fugit tenetur.</p>
-						<a class="wow fadeIn animated" data-wow-delay="0.25s" href="#"><img class="app-store-btn" src="img/app-store-icon.png" alt="App Store Icon"></a>
-						<a class="wow fadeIn animated" data-wow-delay="0.67s" href="#"><img class="google-play-btn" src="img/google-play-icon.png" alt="Google Play Icon"></a>
-					</div>
-				</div>
-			</div>
+	<div class="fh5co-advantages-outer">
+		<div class="container">
+			<h1 class="second-title"><span class="span-perfect">TRABAJAMOS DE LA MANO CON</span></h1>    
+                        
+   <div class="row">
+    <div class="col-6 col-md-4"><img class="grid-image" src="img/Sunat.png"  ></div>
+    <div class="col-6 col-md-4"><img class="grid-image" src="img/cpe.png"></div>
+    <div class="col-6 col-md-4"><img class="grid-image" src="img/Amazon.png"></div>
+  </div>
+        
 		</div>
 	</div>
-
+        
 
 	<!-- ==========================================================================================================
                                                SECTION 7 - SUB FOOTER
@@ -329,7 +500,7 @@
 
 			<div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
 				<div class="column-1-3">
-					<h1>App</h1>
+					<h1><img src="img/logo-white.png" style="width: 250px; height: auto;"></h1>
 				</div>
 				<div class="column-2-3">
 					<nav class="footer-nav">
@@ -343,16 +514,15 @@
 				</div>
 				<div class="column-3-3">
 					<div class="social-icons-footer">
-						<a href="https://www.facebook.com/fh5co"><i class="fab fa-facebook-f"></i></a>
-						<a href="https://freehtml5.co"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.twitter.com/fh5co"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.facebook.com/Multinegocios.la"><i class="fab fa-facebook-f"></i></a>
+						
 					</div>
 				</div>
 			</div>
 
 			<span class="border-bottom-footer"></span>
 
-			<p class="copyright">&copy; 2018 App. All rights reserved. Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
+			<p class="copyright">&copy; 2020 Derechos de Autor. Design by <strong>Multinegocios.la</strong>.</p>
 
 		</div>
 	</footer>
